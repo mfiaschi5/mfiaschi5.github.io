@@ -23,7 +23,6 @@ body {
     border-bottom: 2px solid #1abc9c;
     position: fixed;
     top: 0;
-    width: 100%;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -67,8 +66,6 @@ body {
     padding: 0;
     margin: 0;
     flex-wrap: nowrap; /* Evita che i link del menu vadano su più righe */
-    transition: max-height 0.3s ease-out;
-    overflow: hidden;
 }
 
 .navbar-menu li {
@@ -142,8 +139,8 @@ footer {
     background-color: #2c3e50;
     color: #ecf0f1;
     text-align: center;
-    padding: 30px;
-    margin-top: 40px;
+    padding: 3px;
+    margin-top: 4px;
     border-top: 3px solid #1abc9c;
     font-size: 1.1em;
 }
@@ -208,8 +205,100 @@ footer {
         opacity: 1;
     }
 }
+/* Navbar Styles - Aggiornato per la versione Mobile */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 15px 20px;
+    border-bottom: 2px solid #1abc9c;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.navbar-brand {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: bold;
+    white-space: nowrap;
+}
 
+.navbar-toggle {
+    display: none;
+    background-color: #1abc9c;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5em;
+    border-radius: 4px;
+}
+
+.navbar-toggle:focus {
+    outline: none;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+.navbar-menu a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.navbar-menu a:hover {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+/* Media query per la versione mobile */
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #2c3e50;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .navbar-menu.show {
+        display: flex;
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
 
 .modlink {
     color: white
