@@ -14,5 +14,11 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
-
+document.getElementById('form').addEventListener('click', function(event) {
+            gtag('event', 'click', {
+                'event_category': 'Link',
+                'event_label': 'Google Link',
+                'value': 1
+            });
+        });
 
