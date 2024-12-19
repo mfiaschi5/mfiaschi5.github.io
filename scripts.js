@@ -38,6 +38,6 @@ var countdown = function(date_string) {
 }
 
 window.onload = function() {
-    countdown("06/02/2011");
+    countdown("20/12/2024");
     setInterval(countdown, 1000, "20/12/2024");
 }
