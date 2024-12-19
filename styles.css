@@ -207,3 +207,11 @@ footer {
 .modlink {
     color: white
 }
+
+body { padding: 2em; margin: 0px auto; background-color: white; color: #222; font-family: "Helvetica", "Arial", sans-serif;}
+h1 {border-bottom: 1px solid #aaa; text-align: center; }
+p#countdown { font-size: 150px; text-align: center; margin: 0; padding: 0;}
+table { width: 50%; margin: 0 auto; }
+thead > tr {background-color: #aaa; }
+td, th { text-align: center; padding: 1em; border: 1px solid #ccc; }
+tr.alternate { background-color: #eee; }
