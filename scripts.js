@@ -15,10 +15,18 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 document.getElementById('form').addEventListener('click', function(event) {
-            gtag('event', 'click', {
-                'event_category': 'Link',
-                'event_label': 'Google Link',
-                'value': 1
-            });
-        });
+    event.preventDefault(); // Impedisce il reindirizzamento immediato
+
+    // Invia l'evento a Google Analytics
+    gtag('event', 'click', {
+        'event_category': 'Link',
+        'event_label': 'Form Link',
+        'value': 1
+    });
+
+    // Reindirizza dopo un breve ritardo
+    setTimeout(function() {
+        window.location.href = "https://forms.gle/UFXaEexD5GhEXcG8A"; 
+    }, 300); 
+});
 
