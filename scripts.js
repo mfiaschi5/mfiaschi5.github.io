@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const navbarMenu = document.querySelector(".navbar-menu");
 
     toggleButton.addEventListener("click", function() {
-        // Toggles the 'show' class on the menu to show/hide it
+        
         navbarMenu.classList.toggle("show");
     });
 
