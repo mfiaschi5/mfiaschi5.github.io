@@ -29,4 +29,39 @@ document.getElementById('form').addEventListener('click', function(event) {
         window.location.href = "https://forms.gle/UFXaEexD5GhEXcG8A"; 
     }, 300); 
 });
+ function generateCode() {
+            
+            const nome = document.getElementById('nome').value.trim();
+            const cognome = document.getElementById('cognome').value.trim();
+            let cellulare = document.getElementById('cellulare').value.trim();
 
+           
+            cellulare = cellulare.replace(/^\+?[0-9]{1,3}/, '');
+
+            if (!nome || !cognome || !cellulare) {
+                alert('Inserisci tutti i campi.');
+                return;
+            }
+
+           
+            const combinazione = nome.toLowerCase() + cognome.toLowerCase();
+
+            
+            const chiave = parseInt(cellulare, 10);
+
+            if (isNaN(chiave)) {
+                alert('Il numero di cellulare deve contenere solo cifre.');
+                return;
+            }
+
+           
+            let codice = 0;
+            for (let i = 0; i < combinazione.length; i++) {
+                codice += combinazione.charCodeAt(i) * (i + 1) * chiave;
+            }
+
+           
+            const codiceFinale = String(Math.abs(codice % 100000000)).padStart(8, '0');
+
+            document.getElementById('output').textContent = `Codice generato: ${codiceFinale}`;
+        }
