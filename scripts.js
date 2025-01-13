@@ -36,7 +36,7 @@ document.getElementById('form').addEventListener('click', function(event) {
             let cellulare = document.getElementById('cellulare').value.trim();
 
            
-            cellulare = cellulare.replace(/^\+?[0-9]{1,3}/, '');
+            cellulare = cellulare.replace(/\s+/g, '');
 
             if (!nome || !cognome || !cellulare) {
                 alert('Inserisci tutti i campi.');
@@ -61,7 +61,7 @@ document.getElementById('form').addEventListener('click', function(event) {
             }
 
            
-            const codiceFinale = String(Math.abs(codice % 100000000)).padStart(8, '0');
+            const codiceFinale = String(Math.abs(codice % 10000)).padStart(4, '0');
 
-            document.getElementById('output').textContent = `Codice generato: ${codiceFinale}`;
+            document.getElementById('output').textContent = `{codiceFinale}`;
         }
