@@ -63,5 +63,6 @@ document.getElementById('form').addEventListener('click', function(event) {
            
             const codiceFinale = String(Math.abs(codice % 10000)).padStart(4, '0');
 
-            document.getElementById('output').textContent = `${codiceFinale}`;
+            document.getElementById('output').textContent = Codice generato: ${codiceFinale};
+        
         }
