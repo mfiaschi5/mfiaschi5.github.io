@@ -3,115 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stage di Chimica</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Stage di Chimica - SNS</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 56px; /* Spazio per la navbar fissa */
+        }
+        
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .content-section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .content-section h2 {
+            margin-bottom: 2rem;
+            color: #007bff;
+        }
+        
+        .material-list {
+            column-count: 2;
+            column-gap: 2rem;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+        
+        .footer img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 1rem;
+        }
+        
+        .form-section {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+    </style>
+    
+   
 </head>
-
 <body>
-    <header>
-        <div class="navbar">
-            <a href="#" class="navbar-brand">Stage di Chimica</a>
-            <button class="navbar-toggle">&#9776;</button>
-            <ul class="navbar-menu">
-                <li><a href="#introduzione">Home</a></li>
-                <li><a href="#programma">Programma</a></li>
-                <li><a href="#ammissione">Iscrizione</a></li>
-                <li><a href="#materiale">Preparazione all'ammissione</a></li>
-               
-                <li><a href="#syllabus">Syllabus</a></li>
-                 <li><a href="/contatti.html">Chi siamo</a></li>
-            </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Stage di Chimica</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#introduzione">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#programma">Programma</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ammissione">Iscrizione</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#materiale">Materiale</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#syllabus">Syllabus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contatti.html">Chi siamo</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
-   
-        <section class="content-section">
-        
-      
-        <p>Benvenuti allo Stage di Chimica! Questo evento è pensato per tutti gli studenti appassionati di chimica che desiderano approfondire le loro conoscenze e vivere un'esperienza immersiva nel mondo universitario.</p>
+    </nav>
 
-        <p>Se sei uno studente delle superiori con una passione per la chimica e vuoi migliorare le tue competenze, questo stage è perfetto per te. Anche se semplicemente sei bravo in chimica e desideri un'esperienza diversa dalle lezioni tradizionali questa è l'occasione giusta per fare un salto in avanti.</p>
-        
-        <p>Potrai trascorrere una settimana a Pisa immerso nella chimica, approfittane perché i posti sono limitati!</p>
-        
-        <p>Durante questo periodo, avrai l'opportunità di entrare in contatto con l'ambiente universitario e con altri studenti, ottenendo così una comprensione più chiara del mondo della ricerca.</p>
-        
-        <p>Quindi, non ti resta che impegnarti nello studio e superare il test di ammissione. Buona fortuna!</p>
-        </section>
-        <section id="programma" class="content-section">
-            <h2>Programma dello Stage</h2>
-            <p>Lo Stage si terrà dal <strong>23 febbraio al 1° marzo 2025</strong>. Durante questa settimana, gli studenti avranno l'opportunità di seguire lezioni di approfondimento su vari argomenti di interesse chimico. Oltre a questo, potranno farsi un'idea delle frontiere della ricerca moderna e delle principali sfide attuali nel campo della chimica.</p>
-    
-    <p>Le lezioni saranno tenute dagli studenti della <strong>Scuola Normale Superiore</strong>. La Scuola offrirà <strong>vitto e alloggio gratuiti</strong> per tutta la durata dello stage.</p>
-    
-    <p>Il <strong>programma dettagliato</strong> delle lezioni e delle attività sarà presto disponibile in questa sezione.</p>
-    
-           </section>
-    <section id="ammissione" class="content-section">
-        <h2>Iscrizione</h2>
-         <p>Le iscrizioni apriranno il giorno 20 gennaio 2024 e chiuderanno il giorno 10 gennaio alle ore 12. I vari link saranno disponibili su questa pagina il 20 dicembre dalle ore 12.</p>
-        <h2>Criteri di Ammissione</h2>
-        <p>L’ammissione allo stage è divisa in tre sezioni.</p>
-        <h4>Prima Fase</h4>
-        <p>La prima fase prevede un test a risposta multipla che sarà disponibile dalle ore 12:00 del giorno 20 dicembre 2024 alle ore 12:00 del giorno 10 gennaio 2025. Questa fase serve a selezionare gli elaborati della seconda prova che verranno esaminati, fino ad un massimo di 80 a meno di prove a pari punteggio. Il punteggio della prima fase non influisce sulla graduatoria.</p>
-        <h4>Seconda Fase</h4>
-        <p>La seconda fase prevede un test a risposta aperta, che sarà pubblicato alle ore 12:00 del giorno 20 dicembre 2024. La prova è costituita da quattro problemi, sul modello dei quesiti posti nelle prove di ammissione delle edizioni precedenti (<a href="#materiale">MATERIALE STUDIO</a>). Le risposte potranno essere fornite esclusivamente tramite l’apposito form entro le ore 12:00 del giorno 10 gennaio 2025. L’elaborato dev’essere costituito da un unico file in formato pdf contenente le soluzioni degli esercizi, scritti a mano o tramite un editor di testo. Si può usufruire di libri e di dispense con l'unico obbligo che i test devono essere fatti ESCLUSIVAMENTE da soli. La commissione si riserva il diritto di escludere il candidato nel caso fosse evidente un intervento di terze parti.</p>
-        <h4>Terza Fase</h4>
-        <p>La terza fase è opzionale e prevede una prova orale, a discrezione della commissione, che può richiedere ad alcuni candidati un colloquio orale, accordato in seguito alla correzione della seconda prova  e da svolgere in videochiamata tra il 18 gennaio 2025 e il 24 gennaio 2025.</p>
-        <p>Data la limitata capienza delle aule e al fine di favorire e garantire l’interazione tra partecipanti e docenti saranno ammessi un numero massimo di 24 partecipanti. Nel caso in cui più di 24 candidature risultino idonee, le candidature verranno ordinate per punteggio al test di ammissione e, in caso di parità, favorendo i candidati di età maggiore. In caso di insufficienza dei precedenti criteri, la Commissione si riserva il diritto di scegliere chi ammettere.</p>
+    <!-- Introduzione -->
+    <section id="introduzione" class="content-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Benvenuti allo Stage di Chimica</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="lead">Un'opportunità unica per gli studenti delle superiori appassionati di chimica.</p>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Cosa offriamo</h5>
+                            <ul>
+                                <li>Lezioni approfondite su vari argomenti chimici</li>
+                                <li>Esperienza diretta nel mondo della ricerca</li>
+                                <li>Vitto e alloggio gratuiti presso la Scuola Normale Superiore</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-
-    <section id="materiale" class="content-section">
-        <h2>Materiale per lo Studio</h2>
-        <p></p>
-        <p>Questa sezione contiene materiale utile per la preparazione per la prova di ammissione.</p>
-        <h3>Testi consigliati</h3>
-        <ul>
-
-            <li> Halliday David & Resnick Robert-  Fondamenti di fisica</li>
-            <li> Atkins - Physical Chemistry </li>
-            <li> Clayden - Organic chemistry </li>
-            <li> W. Brown - Introduction to organic chemistry </li>
-            
-        </ul>
-
-        <p>Oltre ai testi presentati, si consiglia la ricerca su internet del materiale, in particolare le dispense dei corsi introduttivi di chimica delle università che spesso si possono trovare online. In lingua inglese si possono trovare numerosi corsi con dispense ad accesso libero che possono essere utili per lo studio visto la loro modesta difficoltà. Infine, si consiglia, con la giusta cautela, la consultazione della versione inglese di Wikipedia. Se necessitate di ulteriore materiale ci potete sempre contattare alla nostra <a href="mailto:segreteria.stagechimica@sns.it">segreteria.stagechimica@sns.it</a>. </p>
-       <h3> Materiale delle edizioni precedenti</h3>
-        <ul>
-            <li><a href="https://drive.google.com/drive/folders/1oH4sb6nM0ftNyBOwStNSk72RHryOkH12?usp=drive_link">Lezioni</a></li>
-            <li><a href="https://drive.google.com/drive/folders/1F1QsFlf1mrAtme0vO43Xlab6PAg1aw3T?usp=drive_link">Test di Ammissione Vecchi</a></li>
-            <li><a href="https://drive.google.com/drive/folders/1MslXm7ehI9POeXZvJEwPSsz6e6K9OxKw?usp=drive_link">Soluzioni dei Problemi</a></li>
-        </ul>
+    <!-- Risultati e Form -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-4">Risultati e Verifica</h2>
+                    <div class="form-section">
+                        <p>Verifica il tuo risultato generando il codice identificativo:</p>
+                        <form onsubmit="event.preventDefault(); generateCode();">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="cognome" class="form-label">Cognome</label>
+                                <input type="text" class="form-control" id="cognome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="cellulare" class="form-label">Ultime 4 cifre del cellulare</label>
+                                <input type="text" class="form-control" id="cellulare" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Genera Codice</button>
+                        </form>
+                        <div id="output" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-
-
-
-    <section id="syllabus" class="content-section">
-        <h2>Syllabus</h2>
-        <p>Questa pagina contiene i prerequisiti necessari per lo svolgimento del test d’ammissione e la comprensione delle lezioni.</p>
-        <h3>Matematica</h3>
-        <p>Concetto di funzione,numeri naturali,interi, reali. Algebra: scomposizione polinomi, risoluzioni equazioni di secondo grado. Geometria:  geometria nello spazio e nel piano, trigonometria. </p>
-        <h3>Fisica</h3>
-        <p>Meccanica: statica, dinamica e cinematica base. Concetti base sugli urti e sull'oscillatore armonico. Energia cinetica e energia potenziale. Idrostatica: legge di stevino e principio di Archimede. Elettromagnetismo: Elettrostatica, conoscenza base dei componeti circuitali, legge di Faraday, Ampere-Maxwell e effetto Doppler.  </p>
-        <h3>Chimica</h3>
-        <p>Fondamenti di termodinamica: calore, lavoro, energia interna, energia libera di Gibbs e Helmholtz, entalpia, leggi dei gas. Elementi di cinetica chimica. Equilibrio chimico. Reazioni acido-base, reazioni redox, reazioni di formazione di composti di coordinazione. Fondamenti di chimica organica: isomeria e stereoisomeria delle molecole organiche, gruppi funzionali e nomenclature, tipi fondamentali di reazioni organiche: reazioni di addizione, sostituzione ed eliminazione.</p>
-       
-    
-    
+    <!-- Programma -->
+    <section id="programma" class="content-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Programma dello Stage</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">23 Febbraio - 1 Marzo 2025</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Lezioni teoriche e pratiche</li>
+                                <li class="list-group-item">Laboratori sperimentali</li>
+                                <li class="list-group-item">Visite ai laboratori di ricerca</li>
+                                <li class="list-group-item">Seminari con ricercatori</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-   
+    <!-- Materiale -->
+    <section id="materiale" class="content-section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Materiale di Studio</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="material-list">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Testi Consigliati</h5>
+                                <ul>
+                                    <li>Halliday & Resnick - Fondamenti di Fisica</li>
+                                    <li>Atkins - Physical Chemistry</li>
+                                    <li>Clayden - Organic Chemistry</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Risorse Online</h5>
+                                <ul>
+                                    <li><a href="#">Dispense Universitarie</a></li>
+                                    <li><a href="#">Corsi Open Access</a></li>
+                                    <li><a href="#">Materiale Precedenti Edizioni</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    
-
-    <footer>
-        <p>Segui anche la <a class='modlink' href="https://www.instagram.com/stage.chimica.sns/">Pagina Instagram</a> </p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>Segui lo Stage su <a href="https://www.instagram.com/stage.chimica.sns/">Instagram</a></p>
+            <img src="https://mfiaschi5.github.io/loghi_PNRR.png" alt="Loghi PNRR">
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://mfiaschi5.github.io/scripts.js"></script>
 </body>
 </html>
-
-    <script src="scripts.js"></script>
-</body>
-</html>
-
